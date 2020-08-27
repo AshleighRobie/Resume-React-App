@@ -5,9 +5,10 @@ import About from './About';
 import Work from './Work';
 import Projects from './Projects';
 import Education from './Education';
+import NavBar from './NavBar';
 
 /*
-    main application function, calls all components
+    main application function ( App() ), calls all components
 */
 
 function App() {
@@ -16,10 +17,13 @@ function App() {
       <header className="App-header">
           Ashleigh Robie
       </header>
-      <About/>
-      <Work/>
-      <Education/>
-      <Projects/>
+      <NavBar/>
+      <div>
+        <About/>
+        <Work/>
+        <Education/>
+        <Projects/>
+      </div>
     </div>
     
   );
